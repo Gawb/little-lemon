@@ -1,0 +1,18 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div{
+    display: block;
+    text-align: left;
+}
+footer div ul li {
+    list-style-type: none;
+}
+footer div ul li a{
+    text-decoration: none;
+}
+.LogoFooter{
+    width: 8%;
+}
