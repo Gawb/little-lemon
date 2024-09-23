@@ -1,0 +1,37 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2% auto;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: #333;
+    border-radius: 12px;
+}
+nav ul li {
+    list-style-type: none;
+    margin: 2% 1%;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight:500;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: #fbdabb;
+}
+
+@media (max-width: 420px){
+    nav ul{
+        width: 100%;
+        border-radius: 0%;
+    }
+    nav ul li a{
+        font-size: small;
+    }
+}

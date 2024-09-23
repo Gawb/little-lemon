@@ -26,6 +26,7 @@ function Footer(){
     return(
         <footer>
             <img className='LogoFooter' src={LogoFooter} alt='Logo Footer'/>
+            <div className='container'>
             <div>
                 <p>Navigation</p>
                 <ul>
@@ -39,12 +40,12 @@ function Footer(){
                 </ul>
             </div>
             <div>
-                <p>Social Media Links</p>
+                <p>Social Media</p>
                 <ul>
                     {SocialItems}
                 </ul>
             </div>
-
+            </div>
         </footer>
     );
 }

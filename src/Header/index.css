@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+}
+img{
+    width: 18%;
+}
+
+@media (max-width: 420px){
+    img{
+        width: 48%;
+    }
+}

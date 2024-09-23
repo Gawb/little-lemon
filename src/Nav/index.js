@@ -1,3 +1,5 @@
+import './index.css';
+
 const elements = ['HOME', 'ABOUT', 'MENU', 'RESERVATION', 'ORDER ONLINE', 'LOGIN'];
 
 function Nav() {

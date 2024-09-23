@@ -2,17 +2,50 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 1% auto 0;
+    bottom: 0;
+    /* position: absolute; */
+    padding: 1% 0;
+    background-color: #edefee;
+    width: 100%;
 }
-footer div{
+.LogoFooter{
+    width: 4%;
+}
+.container{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+footer .container div{
     display: block;
     text-align: left;
 }
-footer div ul li {
+footer .container div p{
+    color: #333;
+    font-weight: 500;
+}
+footer .container div ul li {
     list-style-type: none;
 }
-footer div ul li a{
+footer .container div ul li a{
     text-decoration: none;
+    color: #495e57;
 }
-.LogoFooter{
-    width: 8%;
+footer .container div ul li a:hover{
+    color:#ee9972 ;
+}
+
+@media (max-width: 420px){
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .LogoFooter{
+        width: 16%;
+    }
+    .container{
+        width: 100%;
+        justify-content: space-around;
+    }
 }
