@@ -2,7 +2,7 @@ import Logo from './Logo.svg';
 import './index.css';
 
 
-function Header(){
+const Header = () => {
     return (
         <header>
             <img src={Logo} alt="Logo"/>

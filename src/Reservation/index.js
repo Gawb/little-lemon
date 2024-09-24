@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 
-function Reservation() {
+const Reservation = () => {
     const [location, setLocation] = useState('');
     const [area, setArea] = useState('');
 

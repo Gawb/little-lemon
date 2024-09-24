@@ -5,7 +5,7 @@ const elements = ['Home', 'About', 'Menu', 'Reservation', 'Order Online', 'Login
 const contactInfo = ['Adress','Phone number','Email'];
 const socialMedia = ['facebook','Instagram','X'];
 
-function Footer(){
+const Footer = () => {
 
     const navItems = elements.map((element, index) => (
         <li key={index} id={`nav-item-${index}`}>

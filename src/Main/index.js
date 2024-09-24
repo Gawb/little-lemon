@@ -1,9 +1,9 @@
 import { Reservation } from "../Reservation";
 
-function Main(){
+const Main = () => {
     return(
         <main>
-            <Reservation />
+            
         </main>
     );
 }
