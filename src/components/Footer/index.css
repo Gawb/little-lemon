@@ -2,8 +2,9 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 1% auto 0;
+    margin: 4% auto 0;
     bottom: 0;
+    top: 800px;
     /* position: absolute; */
     padding: 1% 0;
     background-color: #edefee;

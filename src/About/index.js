@@ -1,5 +1,0 @@
-const About = () =>{
-
-}
-
-export { About };

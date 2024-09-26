@@ -1,5 +1,5 @@
 import './index.css';
-import { Reservation } from '../Reservation'
+import { BookingForm } from '../BookingForm'
 import { Homepage } from '../Homepage';
 import { About } from '../About';
 import { Routes, Route, Link } from 'react-router-dom';
@@ -24,9 +24,10 @@ function Nav() {
             </ul>
         </nav>
         <Routes>
+            <Route path="/" element={<Homepage />}></Route>
             <Route path="/home" element={<Homepage />}></Route>
             <Route path="/about" element={<About />}></Route>
-            <Route path="/reservation" element={<Reservation />}></Route>
+            <Route path="/reservation" element={<BookingForm />}></Route>
         </Routes>
         </>
 

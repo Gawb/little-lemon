@@ -1,5 +1,6 @@
 import LogoFooter from './LogoFooter.png';
 import './index.css';
+import { Routes, Route, Link } from 'react-router-dom';
 
 const elements = ['Home', 'About', 'Menu', 'Reservation', 'Order Online', 'Login'];
 const contactInfo = ['Adress','Phone number','Email'];
@@ -9,7 +10,9 @@ const Footer = () => {
 
     const navItems = elements.map((element, index) => (
         <li key={index} id={`nav-item-${index}`}>
-            <a href={`#${element.toLowerCase().replace(" ", "-")}`}>{element}</a>
+            <Link to={`${element.toLowerCase().replace(" ", "-")}`}
+             className='nav-item'>{element}
+             </Link>
         </li>
     ));
     const contactItems = contactInfo.map((element, index) =>(
