@@ -1,5 +1,6 @@
 import './index.css'
 import restFood from './restauranfood.jpg';
+import { Link } from 'react-router-dom';
 
 
 const Homepage = () => {
@@ -14,7 +15,12 @@ const Homepage = () => {
                     recipes seved with modern
                     twist
                 </p>
-                <button>Reserve a Table</button>
+                <button>
+                    <Link to={`/reservation`}
+                        className='nav-item'>
+                        Reserve a Table
+                    </Link>
+                </button>
             </div>
             <div>
                 <img src={restFood}/>

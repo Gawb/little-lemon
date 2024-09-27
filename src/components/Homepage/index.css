@@ -33,6 +33,10 @@ padding: 6% 0;
     font-weight: 600;
     cursor: pointer;
 }
+.homepage-container div button a{
+    color: #333;
+    text-decoration: none;
+}
 .homepage-container div:nth-child(2){
     position:absolute;
     top: 50px;
