@@ -85,7 +85,7 @@ const BookingForm = () => {
     <>
       <p>Please provide us with the following information to proceed with your reservation.</p>
       <div className="reservation-step-one">
-        <label htmlFor='location'>At which location</label>
+        <label htmlFor='location'>At which location (*)</label>
         <select {...register('location', {
           required: 'Location is required',
           validate: value => value !== '--' || 'Please select a valid location'
@@ -96,7 +96,7 @@ const BookingForm = () => {
         </select>
         {errors.location && <span>{errors.location.message}</span>}
 
-        <label htmlFor='area'>Select area</label>
+        <label htmlFor='area'>Select area (*)</label>
         <select {...register('area', {
           required: 'Area is required',
           validate: value => value !== '--' || 'Please select a valid area'
@@ -117,7 +117,7 @@ const BookingForm = () => {
             {errors.Date && <span>{errors.Date.message}</span>}
           </div>
           <div>
-            <label htmlFor='Time'>Available times:</label>
+            <label htmlFor='Time'>Available times (*):</label>
             <select data-testid="select-time" {...register('Time', { required: 'Time is required' })}>
               {availableTimes.length > 0 ? (
                 availableTimes.map((time, index) => (
@@ -132,7 +132,7 @@ const BookingForm = () => {
             {errors.Time && <span>{errors.Time.message}</span>}
           </div>
           <div>
-            <label htmlFor='numberOfPeople'>Number of people:</label>
+            <label htmlFor='numberOfPeople'>Number of people (*):</label>
             <input type="number" {...register('numberOfPeople', {
               required: 'Number of people is required',
               min: { value: 1, message: 'At least one person is required' }
@@ -151,6 +151,7 @@ const BookingForm = () => {
       <div className="reservation-step-one">
         <label htmlFor='reason'>Reason for your reservation:</label>
         <select {...register('reason')}>
+        <option value="occasional">occasional</option>
           <option value="Birthday">Birthday</option>
           <option value="Engagement">Engagement</option>
           <option value="Anniversary">Anniversary</option>
@@ -169,10 +170,10 @@ const BookingForm = () => {
     <>
       <p>Fill in these last fields to complete your reservation.</p>
       <div className="reservation-step-one">
-        <label htmlFor='name'>Full name:</label>
+        <label htmlFor='name'>Full name (*):</label>
         <input {...register('name', { required: 'Full name is required' })} />
         {errors.name && <span>{errors.name.message}</span>}
-        <label htmlFor='phone'>Phone number:</label>
+        <label htmlFor='phone'>Phone number (*):</label>
         <input {...register('phone', {
           required: 'Phone number is required',
           pattern: {
@@ -181,7 +182,7 @@ const BookingForm = () => {
           }
         })} />
         {errors.phone && <span>{errors.phone.message}</span>}
-        <label htmlFor='email'>Email:</label>
+        <label htmlFor='email'>Email (*):</label>
         <input type="email" {...register('email', {
           required: 'Email is required',
           pattern: {

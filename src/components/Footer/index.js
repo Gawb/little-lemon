@@ -3,7 +3,7 @@ import './index.css';
 import { Routes, Route, Link } from 'react-router-dom';
 
 const elements = ['Home', 'About', 'Menu', 'Reservation', 'Order Online', 'Login'];
-const contactInfo = ['Adress','Phone number','Email'];
+const contactInfo = ['P Sherman, 42 Wallaby Way, Sydney','555-3485','contact@littlelemon.com'];
 const socialMedia = ['facebook','Instagram','X'];
 
 const Footer = () => {
